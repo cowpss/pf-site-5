@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+/* common */
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+ol,
+ul {
+  padding: 0;
+  margin-left: 20px;
+}
+
+/* mein */
+.mein {
+  display: flex;
+  font-size: 1rem;
+  align-items: center;
+  height: 700px;
+}
+
+.mein .pic {
+  height: 700px;
+}
+
+.mein .pic img {
+  height: 700px;
+  object-fit: cover;
+  width: 50vw;
+}
+
+.mein .menu {
+  padding: 0 5%;
+  flex: 1;
+}
+
+.mein .menu h1 {
+  font-size: 1.6rem;
+  margin-top: 48px;
+  font-weight: bold;
+}
+
+.mein .menu h2 {
+  border-bottom: solid 1px silver;
+  padding: 8px 0 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.mein .menu dl {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.mein .menu dt {
+  border-bottom: 1px dotted gray;
+  padding: 8px 0;
+  width: 85%;
+  margin-left: 0;
+}
+
+.mein .menu dd {
+  text-align: right;
+  border-bottom: 1px dotted gray;
+  padding: 8px 0;
+  width: 15%;
+  margin-left: 0;
+}
+
+.menu ol li {
+  border-bottom: 1px dotted gray;
+  padding: 8px 0;
+}
+
+.link {
+  margin: 100px 0 160px;
+  text-align: center;
+  display: block;
+}
+
+.link a {
+  text-decoration: none;
+  color: black;
+  border: solid 1px black;
+  padding: 24px 80px;
+}
+
+/* footer */
+footer {
+  text-align: center;
+}
+
+footer ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ol li a {
+  padding: 0 8px;
+  color: black;
+  font-size: .8rem;
+  display: inline-block;
+  margin-bottom: 32px;
+}
+
+footer small {
+  padding: 32px;
+}
+
+/* sp screen */
+@media (max-width: 834px) {
+
+  body {
+    /* background: pink; */
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  h2 {
+    margin-top: 32px;
+  }
+
+  .mein {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .mein .pic img {
+    height: 700px;
+    object-fit: cover;
+    width: 100vw;
+  }
+
+  .mein .menu h1 {
+    font-size: 1.6rem;
+    margin-top: 64px;
+  }
+
+  .link {
+    margin-top: 56px;
+  }
+
+  .link a {
+    font-size: 1rem;
+    padding: 16px 56px;
+  }
+
+  footer ol li a {
+    font-size: .88rem;
+  }
+
+  footer small {
+    font-size: .6rem;
+  }
+}
